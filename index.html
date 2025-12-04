@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio website showcasing projects and skills.">
+    <meta name="theme-color" content="#333">
+    <title>My Portfolio Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="projects-filter">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="ecommerce">E-Commerce</button>
+                <button data-filter="application">Application</button>
+                <button data-filter="portfolio">Portfolio</button>
+            </div>
+            <article class="project project-item ecommerce">
+                <h3>Project 1</h3>
+                <p>A responsive e-commerce website built with modern web technologies.</p>
+            </article>
+            <article class="project project-item application">
+                <h3>Project 2</h3>
+                <p>A task management application with real-time updates and user authentication.</p>
+            </article>
+            <article class="project project-item portfolio">
+                <h3>Project 3</h3>
+                <p>A portfolio website showcasing creative design and interactive features.</p>
+            </article>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript & React</li>
+                <li>Node.js & Express</li>
+                <li>Database Management (MongoDB, SQL)</li>
+                <li>Version Control (Git & GitHub)</li>
+            </ul>
+        </section>
+        <section class="contact-me">
+            <h2>Contact Me</h2>
+            <form action="#" method="post" role="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
